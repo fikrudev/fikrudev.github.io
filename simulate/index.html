@@ -1,0 +1,59 @@
+<?DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>simulation</title>
+    <link rel="stylesheet" href="./stylesheets/simulation_css.css">
+    <!--link rel="script" type="text/javascript" src="./simulation_script.js"-->
+  </head>
+<body>
+   <div id="moveball"></div>
+   <div id="moveball2"></div>
+</body>
+<script>
+//declaring global variables
+const vx=5;
+const vy=10;
+var px=0;
+var py=0;
+var reverseX = false;
+var reverseY = false;
+var $ = function(id){return document.getElementById(id);};
+var mball = $("moveball");
+var mball2= $('moveball2');
+//creating fucntion called by timer. When timer calls, this code updates x an y coordiante values for the ball:
+function simulate(){
+  if(! reverseX){
+      px +=vx;
+	  if (px>1000){reverseX=true;}
+  }
+  if(! reverseY){
+      py +=vy;
+	  if(py>500){reverseY=true;}  
+  }
+  if(reverseX){
+     px -=vx;
+	 if(px<0){
+	  reverseX=false;
+	 }
+  }
+  if(reverseY){
+    py -=vy;
+	if(py<0){
+	 reverseY=false;;
+	}
+  }
+    //ball one
+    mball.style.top= py +'px';
+    mball.style.left= px +'px';
+    //ball two
+    mball2.style.top = py +100 + 'px';
+    mball2.style.left = px +100 +'px';
+    return mball;
+  }
+  setInterval(simulate,15);
+  $('moveball').innerHTML=mball.nodeValue;
+  $('moveball2').innerHTML=mball2.nodeValue;
+</script>
+</html>
