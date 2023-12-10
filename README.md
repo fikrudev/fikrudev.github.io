@@ -26,7 +26,6 @@
       - [x] fikrubio/imgs/columbus.JPG
       - [x] fikrubio/imgs/favicon.JPG
       - [x] fikrubio/imgs/fikrubio.png
-      - [x] fikrubio/imgs/img4
       - [x] fikrubio/index.html
  ## 5. Real Time Bus Tracker
       - [x] busstops/index.html

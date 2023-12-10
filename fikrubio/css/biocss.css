@@ -1,8 +1,8 @@
 #bodycontainer{
     display: grid;
-    grid-template-columns: .7fr 1fr;
+    grid-template-columns: .6fr 1fr;
     grid-template-rows: repeat(4, .5fr);
-    row-gap: 3px;
+    row-gap: 2px;
     font-family: 'NobleRegular';
   }
   #naviation ul li{
@@ -36,12 +36,12 @@
     opacity: 0.3;
     margin-top: 50px;
     /*height: fit-content;*/
-    margin-left: 20px;
+    margin-left: 40px;
   }
   #content{
     width: 90%;
     height: fit-content;
-    margin-left: 30px;
+    margin-left: 0px;
     /*ackground-color: aqua;*/
   }
   #subc1 ul li{
