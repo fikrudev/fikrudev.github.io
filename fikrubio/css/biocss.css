@@ -1,12 +1,11 @@
 body{
-    display: grid;
     row-gap: 2px;
     font-family: 'NobleRegular';
     margin: 30px;
     padding: 5%;
     margin: 30px;
     border: 2px;
-    border-style: solid;
+    /*border-style: solid;*/
     border-right-width: 5%;
     border-left-width: 5%;
     border-color: black;
