@@ -55,10 +55,10 @@ body{
   aside{
     padding-top: 20%;
   }
-  #link_aside{
+  /*#link_aside{
    display: inline;
    grid-template: auto;
-  }
+  }*/
   #img_aside{
     width: 200px;
     height: 200px;
