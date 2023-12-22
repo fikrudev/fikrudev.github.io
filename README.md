@@ -1,23 +1,18 @@
 # 1. Project Title: Landing page
-    This is landing page that describes projects and contains links repositories. Below is partial view of landing page
-    ![Landing page](./landing_page.png "alternate image")
-     1. Profile files:
-         fikrubio/imgs/columbus.JPG
-         fikrubio/imgs/favicon.JPG
-         fikrubio/imgs/fikrubio.png
-         fikrubio/index.html
-     2. Eye
+   This is landing page that describes projects and contains links repositories. Below is partial view of landing page
+   ![Landing page](./landing_page.png "alternate landing page")
+     1. Eye
          eyes.js
          index.html
          styles.css
-     3. Pacman
-         pacman/imgs/pacman1.png
-         pacman/imgs/pacman2.png
-         pacman/imgs/pacman3.png
-         pacman/imgs/pacman4.png
+     2. Pacman
+         pacman/images/pacman1.png
+         pacman/images/pacman2.png
+         pacman/images/pacman3.png
+         pacman/images/pacman4.png
          pacman/js/pacman.js
          pacman/index.html        
-     5. Real Time Bus Tracker
+     3. Real Time Bus Tracker
          busstops/index.html
          busstops/script.js
          busstops/styles.css
