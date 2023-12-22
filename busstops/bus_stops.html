@@ -34,7 +34,7 @@
             ];
 
             // TODO: add your own access token
-            mapboxgl.accessToken = "";
+            mapboxgl.accessToken = "pk.eyJ1IjoiZmlrcnUiLCJhIjoiY2xwbzhhbXMwMHAyMTJpb3Z2MWYzOTFueiJ9.GRFrbGNAyP7M2JC9_YSZCw";
             // This is the map instance
             let map = new mapboxgl.Map({
             container: 'map',
@@ -50,9 +50,6 @@
             // counter here represents the index of the current bus stop
             let counter = 0;
             function move() {
-            // TODO: move the marker on the map every 1000ms. Use the function marker.setLngLat() to update the marker coordinates
-            // Use counter to access bus stops in the array busStops
-            // Make sure you call move() after you increment the counter.
                 const timer=  setTimeout(() => {
                     if (counter>=busStops.length){return}
                     marker.setLngLat(busStops[counter]);

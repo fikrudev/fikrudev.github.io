@@ -13,65 +13,48 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
  </head>
  <body>
-   <div id="navigator">
+  <header>
+    <img src="imgs/icons8machine64.png" alt="Logo">
+    <h1>Full Stack Web Developer</h1>
+    <h5>Portfolio Assignment </h5>
+  </header>
     <!--header and navigation container-->
-    <div class="header"><h1>Full Stack Web Developer</h1></div>
-    <div id="naviation" class="row">
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Family</a></li>
-        <li><a href="#">Travel</a></li>
-        <li><a href="#">Books</a></li>
-        <li><a href="#">Shop</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="../grids/grids.html" target="_blank">Grid</a></li>
+        <li><a href="../pacman/pacman.html" target="_blank">Pacman</a></li>
+        <li><a href="../eyes/eyes.html" target="_blank">Eye</a></li>
+        <li><a href="../busstops/bus_stops.html" target="_blank">Tracker</a></li>
       </ul>
-    </div>
-  </div>
-  <div class="" id="bodycontainer">
-    <div id="picture">
-      <img src="./imgs/fikrubio.png" alt="FikruBedeke">
-    </div>
-    <div class="" id="content" style="text-align: justify">
-      <h3>Intro</h3>
-      <p>Hey there. My name is <b>FIKRU</b>. I live in Columbus, Ohio, USA. I'm attending MIT-xPRO full stack web developer training program. During the training, I added valuable skills that advance my career. The following are enabling technologies for full stack developers: During my study in MIT-XPRO, I learned valuable skills and worked on various assignments and projects to complete the course. Now I’m well equipped to pursue my career as Full Stack Web Developer on <b>MERN</b> framework (Mongo, Express, React and NodeJS). Please visit some of my projects by clicking links under Projects.</p>
-      <div id="subcontent">
-        <div id="subc1">
-          <h2>Skills</h2>
-          <ul>
-            <li>HTM/XML/JSON/MRM</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Mongo DB</li>
-            <li>Express</li>
-            <li>React</li>
-            <li>NodeJS</li>
-            <li>PL/SQL</li>
-            <li>Java</li>
-        </ul>
-        </div>
-        <div id="subc2">
+    </nav>
+  <main class="" id="bodycontainer">
+      <article>
+          <h2>Intro</h2>
+          <p>Hey there. My name is <b>FIKRU</b>. I live in Columbus, Ohio, USA. I'm attending MIT-xPRO full stack web developer training program. During the training, I added valuable skills that advance my career. The following are enabling technologies for full stack developers: During my study in MIT-XPRO, I learned valuable skills and worked on various assignments and projects to complete the course. Now I’m well equipped to pursue my career as Full Stack Web Developer on <b>MERN</b> framework (Mongo, Express, React and NodeJS). HTML, CSS, JavaScript are pillars of web development. Links at menue bar would take one to projects I have worked on</p>
           <h2>Projects</h2>
-          <ul>
-            <li><a href="https://fikrudev.github.io/pacman/pacman.html" target="_blank">PROJECT#1:Pacman</a></li>
-            <li><a href="https://fikrudev.github.io/grids/index.html" target="_blank">PROJECT#2:AutoGrid</a></li>
-            <li><a href="https://fikrudev.github.io/rwalk/index.html" target="_blank">PROJECT#3:RandomWalk</a></li>
-            <li><a href="https://fikrudev.github.io/simulate/index.html" target="_blank">PROJECT#4:Simulation</a></li>
-            <li><a href="https://fikrudev.github.io/eyes/index.html" target="_blank">PROJECT#5:MovingEyes</a></li>
-            <li><a href="https://fikrudev.github.io/busstops/index.html" target="_blank">PROJECT#6:BusStopTrucker</a></li>
-          </ul>
+          <h4>Pacman</h4>
+          <p>“Pacman” entertains viewers. He is laughing loud while travelling along the screen. In fact he is not. It is computer that assimlate as if pacman is laughing. Interestingly, it is JavaScript that swaps image icons, which were stored on the file, at certain time and position. Browser, executes codes written on HTML, CSS and Java Script to perform things that looks magic. In fact, computer is magic machine that delays/simulating light, that is travelling at its speed (3x10^8m/s). Amazing human invention.
+            Click <a href="../pacman/pacman.html" target="_blank"><b>PACMAN SHOW</b></a> to see what he is doing.
+          </p>
+          <h4>Bus Stop Tracker</h4>
+          <p>
+            This is the second interesting project in my portfolio. The “Bus Stop Tracker” tracks locations on real time. It picks latitude and longitude data and marks those points on the screen. In such manner it tracks the position of moving object such cars, ships, plans, bullets, missiles, etc. Thanks to technology, GPS has made our life easier when driving or walking in big cities like New Your or London. Life eased because of technics like the one we used in this course. Click <a href="../busstops/bus_stops.html" target="_blank">BUS STOP TRACKER</a> to see the map; where bus tracker moves when you click button at top right corner. To repeat markert movement, pls refresh your browser.
+            Pls visit links on header menu to visit other interesting projects created while attending full stack developer training.</p>
+       </article>
+        <aside>
+          <img id="img_aside" src="./imgs/fikrubio.png" alt="FikruBedeke">
+          <div id="repo_link">
+          <h5>GitHub Repository</h5>
+          <p> <a href="https://github.com/fikrudev/fikrudev.github.io" target="_blank">GitHub</a></p>
+         <h5>Youtube Link</h5>
+         <p><a href="https://youtu.be/gw3KCaquAH4?si=_KazEdhQLE49dZcT" target="_blank">Youtube Link</a></p>
         </div>
-        <div id="subc3">
-          <h2>Social</h2>
-          <ul>
-            <li><a href="https://github.com/fikrudev/fikrudev.github.io" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/fikru-bedeke-402a1a174/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://youtu.be/gw3KCaquAH4?si=_KazEdhQLE49dZcT" target="_blank">YouTube</a></li>
-            <li><a href="#" target="_blank">Facebook</a></li>
-            <li><a href="#" target="_blank">Twitter</a></li>
-        </ul>
-        </div>       
-      </div>
-    </div>
-    </div>
-    <div id="footerbox"></div>
+        </aside>
+        </main>
+        <footer>
+          <p>&copy;Copyright 2024 Fikru Bedeke, Columbus, Ohio </p>
+        </footer>
  </body>
  </html>

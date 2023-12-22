@@ -1,71 +1,108 @@
-#bodycontainer{
+body{
     display: grid;
-    grid-template-columns: .6fr 1fr;
-    grid-template-rows: repeat(4, .5fr);
-    row-gap: 2px;
+    grid-template: repeat(4, auto) / auto 1fr;
+    grid-template-areas: "head head"
+                         "navi navi"
+                         "main main"
+                         "foot foot";
     font-family: 'NobleRegular';
+    margin: 30px;
+    padding: 5%;
+    margin: 30px;
+    border: 2px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black
   }
-  #naviation ul li{
-    display:inline-block;
-    font-size: 1.25em;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    text-decoration: none;
+  /*style for header*/
+  header{
+     grid-area: head;
+     background-color: burlywood;
+     padding-left: 40px;
+     margin-left: 40px;
   }
-  #subcontent{
-    display: grid;
-    grid-template-columns: .5fr .5fr .5fr;
-    grid-template-rows: 1fr;
-    row-gap: 5px;
-    font-family: 'NobleRegular';   
+  nav{
+    display: table;
   }
-  .header{
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 0px;
-    background-color: bisque;
-    width: 100%;
-  }
- 
-  h1, h3{
-    font-family: 'Nobile-Bold';
-    color: black;
-    text-align: auto;
-  }
-  #picture{
-    opacity: 0.3;
-    margin-top: 50px;
-    /*height: fit-content;*/
+  /*the style for the navigation menu*/
+  #nav_menu{
+    height: 10px;
+    grid-area: navi;
+    padding-left: 40px;
     margin-left: 40px;
+    background-color: #00FFFF;
+    margin-bottom: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 2px;
   }
-  #content{
-    width: 90%;
-    height: fit-content;
-    margin-left: 0px;
-    /*ackground-color: aqua;*/
-  }
-  #subc1 ul li{
-    list-style-type: square;
-    line-height: 15px;
-    text-decoration: none;
-  }
-  #subc2 ul li{
+  #nav_menu ul li{
+    display: inline-block;
+    flex-basis: 10%;
+    justify-content: space-around;
     list-style-type: none;
-    line-height: 15px;
-    text-decoration: none;
+    margin: 10px;
+    padding: 20px;
+    font-size: large;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    
   }
-  #subc3 ul li{
-    list-style-type: none;
-    line-height: 15px;
-    text-decoration: none;
+  main{
+    margin: 3% 3%;
+    display: grid;
+    grid-template: auto;
+    grid-gap: 2%;
+    grid-template-areas: "arti side";
   }
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }	
-  #footerbox{
-    position: relative;
-    background-color:rosybrown;
-    height: 40px;
+  article{
+    
+    max-width: fit-content;
+    grid-area: side;
+    padding-left: 40px;
+    text-align: justify;
+  }
+  aside{
+    padding-top: 20%;
+  }
+  #link_aside{
+   display: inline;
+   grid-template: auto;
+  }
+  #img_aside{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 2px;
+    display: inline-flex;
+    grid-template: auto;
+    margin-bottom: 10px;
+    opacity: 0.3;
+   }
+   #repo_link{
+    margin-top: 20px;
+    padding: 20px;
+    border-style: solid;
+    box-sizing: content-box;
+    background-color: bisque;
+    text-align: center; 
+    font-size: large; 
+    font-family: NobleRegular;
+   }
+  footer{
+    grid-area: foot;
+    background-color: #800000;
+    margin: 20px;
+    color: wheat;
+  }
+  h1,h2, h3, h4{
+    font-weight: bold;
+  }
+  #pp_id{
+    font-weight: bold;
+    color: blue;;
   }
   a{
     list-style-type: none;
@@ -73,6 +110,42 @@
     text-decoration: none;
     font-size: 14;
     font-weight: bold;
+  }
+  @media only screen and (max-width:767px){
+    body{
+      grid-template: repeat(4, auto)/ 1fr;
+      grid-gap: 0;
+      grid-template-areas:
+              "head"
+              "navi"
+              "main"
+              "foot";
+    }
+    header{
+      padding: grid;
+      grid-template: repeat(3, auto) / 1fr;
+      grid-gap: .03em;
+      justify-items: center;
+      margin-bottom: 2px;
+    }
+    mobile_menu{
+      display: block;
+      grid-area: anvi;
+    }
+    main{
+      margin: 0;
+      grid-template: auto auto / 1fr;
+      grid-gap: 2%;
+      grid-template-areas:
+          "side"
+          "arti";
+    }
+    articles{
+      margin: 1.2em 2%;
+    }
+    aside{
+      padding: 1em 2%;
+    }
   }
   
  /* html {
