@@ -114,7 +114,7 @@ body{
     font-size: 14;
     font-weight: bold;
   }
-  @media only screen and (max-width:767px){
+  /*@media only screen and (max-width:767px){
     body{
       grid-template: repeat(4, auto)/ 1fr;
       grid-gap: 0;
@@ -149,7 +149,7 @@ body{
     aside{
       padding: 1em 2%;
     }
-  }
+  }*/
   
  /* html {
     -webkit-box-sizing: border-box;
