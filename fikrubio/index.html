@@ -29,6 +29,19 @@
   <div class="w3-row-padding">
       <div class="w3-col s2">
         <img id="img_aside" src="./imgs/fikrubio.png" alt="FikruBedeke">
+        <div class="w3-row">
+          <div class="w3-row s3 w3-green w3-center"><button id="dateSetter" onclick="showDate('getDate')">GetDate </button></div>
+          <div class="w3-row s3 w3-dark-grey w3-center"><button id="dateHidder"  onclick="showDate('closeDate')">HideDate</button></div>
+          <script>
+            function showDate(setdate){
+                if(setdate=='getDate'){
+                  document.getElementById('dateSetter').innerHTML = Date();
+                } else if(setdate=='closeDate'){
+                  document.getElementById('dateSetter').innerHTML= 'GetDate ';
+                }
+            }
+        </script>
+        </div> 
       </div>
       <div class="w3-col s6">
         <h2>Intro</h2>
