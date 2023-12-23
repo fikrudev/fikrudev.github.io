@@ -19,7 +19,7 @@
     <h1>Full Stack Web Developer</h1>
     <h5>Portfolio Assignment </h5>
   </div>
-  <!--MENU BAR-->
+  <!--MENU፡ top Header-->
   <div class="w3-bar w3-green">
     <div class="w3-bar-item"><a href="./index.html">Home</a></div>
     <div class="w3-bar-item"><a href="../grids/grids.html" target="_blank">Grid</a></div>
@@ -28,27 +28,24 @@
     <div class="w3-bar-item"><a href="../busstops/bus_stops.html" target="_blank">Tracker</a></div>
     <div class="w3-bar-item"><a href="../balls/random_balls.html" target="_blank">Painting</a></div>
   </div>
-  <!--END MENU BAR-->
-  <div class="w3-col-padding">
-    <div class="w3-col s2">
-      <div class="w3-row s4">
+  <!--main body-->
+  <div class="w3-row-padding">
+    <div class="w3-row s8">
+      <h2>Student's Bio</h2>
+      <p>Hey there. My name is <b>FIKRU</b>. I live in Columbus, Ohio, USA. I'm attending MIT-xPRO full stack web developer training. During the training, I added valuable skills that advance my skill sets. HTML, CSS and JavaScript are enabling technologies for web developers: Learned useful skills and worked on various assignments and projects to demonstrate profeciency in using these amazing tech stacks. I’m delighted and inspired to further these skills for real world application. The technology stack in <b>MERN</b> framework (Mongo, Express, React and NodeJS), enables developers to become computer scientist: <b>&#128515;</b>. Click tabs on menu bar to open show cases</p>
+    </div>
+    <div class="w3-row">
+      <div class="w3-col s4">
         <img id="img_aside" src="./imgs/fikrubio.png" alt="FikruBedeke">
-         <div class="w3-row">
-           <div class="w3-row s3 w3-green w3-center"><button id="dateSetter" onclick="showDate('getDate')">GetDate </button></div>
-           <div class="w3-row s3 w3-dark-grey w3-center"><button id="dateHidder"  onclick="showDate('closeDate')">HideDate</button></div>
-         </div> 
       </div>
-      <div class="w3-row s3 w3-orange">
+      <div class="w3-col s4 w3-orange">
         <h3>Github Link</h3>
         <p> <a href="https://github.com/fikrudev/fikrudev.github.io" target="_blank">GitHub Repo Link</a></p>
         <h3>Youtube Link</h3>
         <p><a href="https://youtu.be/gw3KCaquAH4?si=_KazEdhQLE49dZcT" target="_blank">Youtube Link</a></p> 
-      </div>
-    </div>
-    <!--articly-->
-    <div class="w3-col s8">
-      <h2>Intro</h2>
-      <p>Hey there. My name is <b>FIKRU</b>. I live in Columbus, Ohio, USA. I'm attending MIT-xPRO full stack web developer training. During the training, I added valuable skills that advance my skill sets. HTML, CSS and JavaScript are enabling technologies for web developers: Learned useful skills and worked on various assignments and projects to demonstrate profeciency in using these amazing tech stacks. I’m delighted and inspired to further these skills for real world application. The technology stack in <b>MERN</b> framework (Mongo, Express, React and NodeJS), enables developers to become computer scientist: <b>&#128515;</b>. Click tabs on menu bar to open show cases</p>
+      </div> 
+    </div> 
+    <div class="w3-row s8">
       <h2>Projects</h2>
       <h4><b>Pacman</b></h4>
       <p>“Pacman” entertains viewers. He is laughing loud while travelling along the screen. It is the magic of computer that assimilate pacman as if he opens and closes his mouth. Interestingly, JavaScript swaps image icons behind the scene. which were stored on the file, at certain time and position. Browser, executes HTML, CSS and JavaScript files to perform things that we see on screen. Computer is magic machine that controls light speeds and color it to us so that our eye able to see it. Amazing invention. Click <a href="../pacman/pacman.html" target="_blank"><b>"SHOW PACMAN"</b></a> to see what he is doing.</p>
@@ -57,8 +54,12 @@
       <h4><b>Painting</b></h4>
       <p>Paintings are exhibit that shows colorful balls “raining” to create a paint on the screen. Every fraction of a second, balls of color popup on the screen at random location. Behind the scene, JavaScript randomly picks a point and styles that in the form of ball shape and color. Click <a href="../balls/random_balls.html" target="_blank"><b>"SHOW PAINTINGS"</b></a> to view the paint. Close your screen once you see enough of the balls printed to the screen.</p>
   </div>
+  <div class="w3-row">
+    <div class="w3-col s3 w3-green"><button id="dateSetter" onclick="showDate('getDate')">GetDate </button></div>
+    <div class="w3-col s3 w3-dark-grey"><button id="dateHidder"  onclick="showDate('closeDate')">HideDate</button></div>
+  </div> 
    <!--end article--> 
-  <div class="w3-row"><footer><p>&copy;Copyright 2024 Fikru Bedeke, Columbus, Ohio </p></footer></div>    
+  <footer><p>&copy;Copyright 2024 Fikru Bedeke, Columbus, Ohio </p></footer>    
 </div>
 <script>
     function showDate(setdate){
