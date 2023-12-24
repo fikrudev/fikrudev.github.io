@@ -64,9 +64,10 @@ body{
     opacity: 0.3;
    }
   footer{
+    padding:10px;
     background-color: #800000;
     margin-bottom: 20px;
-    color: wheat;
+    color: aqua;
   }
   h1,h2, h3, h4{
     font-weight: bold;

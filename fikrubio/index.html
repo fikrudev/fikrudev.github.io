@@ -34,7 +34,7 @@
       <div class="w3-row s4">
         <img id="img_aside" src="./imgs/fikrubio.png" alt="FikruBedeke">
          <div class="w3-row">
-           <div class="w3-row s3 w3-green w3-center"><button id="dateSetter" onclick="showDate('getDate')">GetDate </button></div>
+           <div class="w3-row s3 w3-green w3-center"><button id="dateSetter" onclick="showDate('getDate')">showDate </button></div>
            <div class="w3-row s3 w3-dark-grey w3-center"><button id="dateHidder"  onclick="showDate('closeDate')">HideDate</button></div>
          </div> 
       </div>
@@ -58,14 +58,14 @@
       <p>Paintings are exhibit that shows colorful balls “raining” to create a paint on the screen. Every fraction of a second, balls of color popup on the screen at random location. Behind the scene, JavaScript randomly picks a point and styles that in the form of ball shape and color. Click <a href="../balls/random_balls.html" target="_blank"><b>"SHOW PAINTINGS"</b></a> to view the paint. Close your screen once you see enough of the balls printed to the screen.</p>
   </div>
    <!--end article--> 
-  <div class="w3-row"><footer><p>&copy;Copyright 2024 Fikru Bedeke, Columbus, Ohio </p></footer></div>    
+  <div class="w3-row"><footer><p>&copy;Copyright 2024, Fikru Bedeke, Columbus, Ohio </p></footer></div>    
 </div>
 <script>
     function showDate(setdate){
       if(setdate=='getDate'){
           document.getElementById('dateSetter').innerHTML = Date();
         } else if(setdate=='closeDate'){
-          document.getElementById('dateSetter').innerHTML= 'GetDate ';
+          document.getElementById('dateSetter').innerHTML= 'showDate ';
         }
       }
   </script>   
