@@ -82,6 +82,7 @@ body{
     font-size: 14px;
     font-weight: bold;
   }
+  strong{color: blue;}
   /*@media only screen and (max-width:767px){
     body{
       grid-template: repeat(4, auto)/ 1fr;
