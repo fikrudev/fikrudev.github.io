@@ -1,5 +1,5 @@
-# 1. Project Title: React ATM Transaction Processing Application
-   This application updates "toDo" items on the realtime. Users could add or remove thier to do items as needed.
+# 1. Project Title: React ATM User Infterface
+   ATM user interface app is a UI developed to interact with users using React frame work. It allows users to deposit or withdraw money from their accounts. This is a modification to the ATM code that instructors shared in the learning module. It is refactored in way that shows account balance together with transaction type that is performed by the users. For example, when user withdraw money from their account, it shows amount withdrawn together with remaining balance on the account. Currently this app has some limitations. For example, is allows users to withdraw money when they have lessor zero account. This sees limitation but it is an alternative issuing credit card. In this mode users can withdraw money from the bank when they are in fact in deficit. It saves bank from issuing two cards: Credit and debit. Regardless of this, this app needs lots of upgrade and improvement to make user friendly. 
    ![Landing page](./atm_ui_ss.png "alternate landing page")
      1.ATMMachineUserInterface
          atm_ui_js.js
