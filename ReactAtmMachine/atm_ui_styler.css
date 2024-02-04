@@ -1,0 +1,27 @@
+#root{
+  margin: 20px;
+  font-family: 'Arial';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.addToDoItems{
+  background: #209cee;
+  max-width: 150px;
+  border-radius: 4px;
+  font-size: large;
+  text-align: center;
+  padding: 2px;
+}
+.addItems{
+  width: 20%;
+  margin: 10px;
+  box-sizing:content-box;
+  border:#209cee;
+  border-radius: 4px;
+  box-shadow:#209cee;
+  padding: 10px;
+  height: 2.25em;
+  font-size: 24px;
+  border-style: solid;
+}

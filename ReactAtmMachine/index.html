@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ATM2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="short cut icon" href="./favicon.jpg">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+      <body>
+        <div id="root"></div>
+        <script src="https:/unpkg.com/react/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+        <!--script src="account_blance.js" defer type="text/babel"></script -->
+    <script defer type="text/babel">
+        let accountBalance=100;
+        let trnsMsg = "";
+        let trnsType = "";
+        let balanceStatus = "Your total blance is: $";
+        const DepositToAccount = ({onChange, isDeposit}) =>{
+                const tnsType = ["Deposit", "Cash Back"];
+                return (
+                    <label className="userInput">
+                    <input id="input"  type="number" placeholder="" isDeposit={isDeposit} onChange={onChange}/>&nbsp;&nbsp;
+                </label>                         
+                );
+            }
+        function AccountStatus(){
+            const [transaction, setTransaction] = React.useState(0);
+            const [isDeposit, setIsDeposit] = React.useState(true);  
+            
+            const handleChange = (evt) =>{
+                setTransaction(Number(evt.target.value)); 
+            };
+
+            const handleSubmit = (e) =>{
+                e.preventDefault;
+                //newamount = document.getElementById('input').value;
+                if(isDeposit){
+                    accountBalance += transaction;
+                    trnsMsg = "You currently deposited: $";
+                    //trnsType = "Deposit";
+                } else if (!isDeposit){
+                    accountBalance -= transaction;
+                    trnsMsg = "You currently withdrawn: $";
+                    //trnsType = "cash back";
+                }    
+                 
+                document.getElementById('deposit').innerHTML = trnsMsg +transaction;
+                document.getElementById('total').innerHTML = balanceStatus + accountBalance;    
+            } 
+           const handleDeposit = () =>{
+                    setIsDeposit(true);
+                    document.getElementById("trnsType").innerHTML="Enter amount to deposit";
+                }
+            const handleWithdrawal = () =>{
+                    setIsDeposit(false);
+                    document.getElementById("trnsType").innerHTML="Enter amount to cash back";
+                }                
+            return (
+                <form onSubmit={handleSubmit} method="">
+                    <h2 id="">Welcome to B&B Bank</h2>
+                    <h3>Select transaction type:</h3>
+                    <h3 id="trnsType"></h3>
+                    <input id="deposit-btn" type="button" width="200" value="Deposit" onClick={handleDeposit}/>&nbsp;&nbsp;
+                    <input id="cashback-btn" type="button" width="200" value="Get Cash" onClick={handleWithdrawal}/>&nbsp;&nbsp; 
+                    <DepositToAccount onChange={handleChange} isDeposit={isDeposit}/>
+                    <input id="submit-btn" type="button" onClick={handleSubmit}  value="Submit"/>
+                    <h1 id="deposit"></h1>
+                    <h1 id="total"></h1>  
+                </form>
+            )
+        }
+        ReactDOM.render(<AccountStatus/>,document.getElementById("root"));           
+ </script>
+</body>
+</html>
