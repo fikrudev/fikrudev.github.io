@@ -1,13 +1,14 @@
-# 1. Project Title: ATMUserInterface
-![Landing page](./atm_ui_ss.png "alternate landing page")
+# 1. Project Title: Fetcher and Renderer
+![Landing page](./fetchAndRender_ui_ss.png "alternate landing page")
 
 
-ATM user interface app is a UI developed to interact with users using React frame work. It allows users to deposit or withdraw money from their accounts. This is a modification to the ATM code that instructors shared in the learning module. It is refactored in way that shows account balance together with transaction type that is performed by the users. For example, when user withdraw money from their account, it shows amount withdrawn together with remaining balance on the account. Currently this app has some limitations. For example, is allows users to withdraw money when they have lessor zero account. This sees limitation but it is an alternative issuing credit card. In this mode users can withdraw money from the bank when they are in fact in deficit. It saves bank from issuing two cards: Credit and debit. Regardless of this, this app needs lots of upgrade and improvement to make user friendly. 
-     1.ATMUserInterface
-         atm_ui_js.js
+Fetch and Render service is one of vital coding exercise in my MERN training module. This UI, which is created using React components, fetches data from backend and render it to users in formatted and beautified manner. It fetches stories from various new anchors/feeders and render it to users on a paginated page. It is near to real world solution which could be easily adopted by business for internal use with their customers and employees. At this stage, this application is not completed or ready for use. I'm working on it to make it work as expected. I have added screenshot of issue i was facing when implementing the same code that works in training environment but not in my local setup. I’m working to resolve this issue.     
+     1.Fetch and Render app artifacts:
+         fetchAndRenderJs.js
          index.html
-         atm_ui_styler.css
-         atm_ui_ss.png
+         fetchAndRenderCSS.css
+         fetchAndRender_ui_ss.png
+         README.md
 # 2. Motivation
     Learning React framework for developing UIs. ATM user interface app is an application of React Framework for desinging and developing user interface.
 # 3. Build Status
