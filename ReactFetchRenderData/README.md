@@ -2,7 +2,7 @@
 ![Landing page](./fetchAndRender_ui_ss.png "alternate landing page")
 
 
-Fetch and Render service is one of vital coding exercise in my MERN training module. This UI, which is created using React components, fetches data from backend and render it to users in formatted and beautified manner. It fetches stories from various new anchors/feeders and render it to users on a paginated page. It is near to real world solution which could be easily adopted by business for internal use with their customers and employees. At this stage, this application is not completed or ready for use. I'm working on it to make it work as expected. I have added screenshot of issue i was facing when implementing the same code that works in training environment but not in my local setup. I’m working to resolve this issue.     
+Fetch and Render service is one of vital coding exercise in my MERN training module. This UI, which is created using React components, fetches data from backend and render it to users in formatted and beautified manner. It fetches stories from various new anchors/feeders and render it to users on a paginated page. It is near to real world solution which could be easily adopted by business for internal use with their customers and employees. At this stage, this application is partially completed. I'm working to offer more features that enahance usability/functionality to the users. I have added screenshot of issue i was facing when implementing the same code that works in training environment but not in my local setup. I’m working to resolve this issue.     
      1.Fetch and Render app artifacts:
          fetchAndRenderJs.js
          index.html
@@ -10,7 +10,7 @@ Fetch and Render service is one of vital coding exercise in my MERN training mod
          fetchAndRender_ui_ss.png
          README.md
 # 2. Motivation
-    Learning React framework for developing UIs. ATM user interface app is an application of React Framework for desinging and developing user interface.
+    Learning React framework for developing UIs. FetchAndRender UI fetches data from backend web sites and renders/presents it in formatted form to readers/searchers.
 # 3. Build Status
    This project currently tested in chrome browser and working as expected. However, this doesn’t mean that somebody could use this code to accomplish anything practical in business world. 
 # 4. Code Style
