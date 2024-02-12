@@ -1,11 +1,12 @@
+
 const Pagination = ({ items, pageSize, onPageChange }) => {
-    const {Button} = ReactBootstrap;
+    const Button = ReactBootstrap.Button;
     if (items.length <= 1) return null;
     let num = Math.ceil(items.length/pageSize);
     let pages = range(1, num +1);
     const list = pages.map(page =>{
      return(
-         <Button key={page} onClick={onPageChange} className="page-item">
+         <Button key={page} onClick={onPageChange}>
          {page}
          </Button>
      );
@@ -111,9 +112,9 @@ const Pagination = ({ items, pageSize, onPageChange }) => {
         {isLoading ? (
           <div>Loading ...</div>
         ) : (
-          <ul className="list-group">
+          <ul>
             {page.map((item) => (
-              <li className="list-group-item" key={item.objectID}>
+              <li key={item.objectID}>
                 <a href={item.url}>{item.title}</a>
               </li>
             ))}
