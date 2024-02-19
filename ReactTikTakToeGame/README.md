@@ -1,6 +1,6 @@
-# 1. Project Title: List to do items app
+# 1. Project Title: React Tik Tak Toe Game
    This application updates "toDo" items on the realtime. Users could add or remove thier to do items as needed.
-   ![Landing page](./tik-tak-toe-readme.png"alternate landing page")
+   ![Landing page](./tik_tak_toe_readme.png" alternate landing page")
      1.React Tik Tak Toe Game
          tik-tak-toe-js.js
          tik-tak-toe-index.html
