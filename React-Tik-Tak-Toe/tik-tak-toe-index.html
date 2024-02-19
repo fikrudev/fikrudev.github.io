@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="short cut icon" href="./favicon.jpg">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <style>
+            .square-button {
+                width: 50px;
+                height: 50px;
+                border: solid 2px;
+                background-color: orange;
+                border-radius: 5px;
+                text-align: center;
+                margin: 5px;
+                font-size: large;
+                font-weight: bold;
+                color: maroon;
+                
+            }
+            h1{
+                color: black;
+            }
+            .game-board {
+                width: 50%;
+                height: 50%;
+                margin: 30px;
+                background-color:darkslateblue;
+                background-origin: auto;
+                display: grid;
+                border-radius: 10px;
+                text-align: left;
+                font-weight: bold;
+                
+            }
+            .grid-row {
+                width: auto;
+                height: auto;
+                margin: 20px;
+                background-color:mediumseagreen;
+                background-image: radial-gradient(center contain yellow green);
+                background-origin: auto;
+                display: grid;
+                border-radius: 10px;
+                text-align: center;
+                font-weight: bold;
+            } 
+            .toggle-btn{
+                width: auto;
+                height: 40px;
+                text-align: center;
+                background-color:bisque;
+                font-size: large;
+                font-weight: bold;
+                margin: 20px;
+            }   
+            .board-btn button {
+                margin: 20px;
+                text-align: center;
+                width: 80px;
+                font-size: medium;
+                border-radius: 10px;
+                font-weight: bold;
+                border: 5px solid darkorange;
+            }
+     
+        </style>
+    </head>
+      <body>
+        <div id="root">
+        </div>
+        <script src="https:/unpkg.com/react/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+        <!--script src="./tik-tak-toe-js.js" defer type="text/babel"></script-->
+        <script defer type="text/babel">
+            const Square = ({ takeTurn, id, reset}) => {
+            const mark = ['O', 'X', '+'];
+            const [filled, setFilled] = React.useState(false);
+            const [tik, setTik] = React.useState(2); 
+            const [mounted, setMounted] = React.useState(true);
+            const toggle= () =>setMounted(!mounted);
+            
+            if(mounted==false) {
+                return null;
+                
+            }
+            return (
+              <button className="toggle-btn" type="button" 
+                // DO NOT DELETE THIS id
+                id={`square-button-${id}`}
+                onClick={(ev) => {
+                    setTik(takeTurn(id));
+                    setFilled(true);
+                    // Step 3: Trigger toggle() when button is clicked
+                    toggle();
+                }}>
+                {mark[tik]}
+                </button>
+               
+            );
+            
+            };
+
+            const Board = () => {
+ 
+            const [player, setPlayer] = React.useState(1);
+            const [gameState, setGameState] = React.useState([]);
+            const [reset, setReset] = React.useState(false); 
+
+            const toggle = () =>setReset(!reset);
+
+            const takeTurn = (id) => {
+                setGameState([...gameState, { id: id, player: player }]);
+                setPlayer((player + 1) % 2); // get next player
+                return player;
+            };
+            function renderSquare(i) {
+                console.log("render square fucntion triggered");
+                return (
+                    <Square takeTurn={takeTurn} id={i}></Square>
+                    );
+            }
+            return (
+                <div className="game-board">
+                <div className="grid-row">
+                    <Square id={1} takeTurn={takeTurn}></Square>
+                    <Square id={2} takeTurn={takeTurn}></Square>
+                    <Square id={3} takeTurn={takeTurn}></Square>
+                </div>
+                {reset && 
+                      <div className="grid-row">
+                        {renderSquare(0)}
+                        {renderSquare(1)}
+                        {renderSquare(2)}
+                    </div>
+                   } 
+                <div className="board-btn">
+                    <button type="button" onClick={(ev)=>{
+                        toggle();
+                        console.log("reset button clicked");
+                    }}>Reset</button>
+                </div>
+                </div>
+            );
+            };
+
+            const Game = () => {
+            return (
+                <div className="game">
+                <Board></Board>
+                </div>
+            );
+            };
+
+            // ========================================
+
+            ReactDOM.render(<Game />, document.getElementById('root'));
+
+        </script>
+    </body>
+</html>

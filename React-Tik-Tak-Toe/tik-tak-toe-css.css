@@ -1,0 +1,58 @@
+            .square-button {
+                width: 50px;
+                height: 50px;
+                border: solid 2px;
+                background-color: orange;
+                border-radius: 5px;
+                text-align: center;
+                margin: 5px;
+                font-size: large;
+                font-weight: bold;
+                color: maroon;
+                
+            }
+            h1{
+                color: black;
+            }
+            .game-board {
+                width: 50%;
+                height: 50%;
+                margin: 30px;
+                background-color:darkslateblue;
+                background-origin: auto;
+                display: grid;
+                border-radius: 10px;
+                text-align: left;
+                font-weight: bold;
+                
+            }
+            .grid-row {
+                width: auto;
+                height: auto;
+                margin: 20px;
+                background-color:mediumseagreen;
+                background-image: radial-gradient(center contain yellow green);
+                background-origin: auto;
+                display: grid;
+                border-radius: 10px;
+                text-align: center;
+                font-weight: bold;
+            } 
+            .toggle-btn{
+                width: auto;
+                height: 40px;
+                text-align: center;
+                background-color:bisque;
+                font-size: large;
+                font-weight: bold;
+                margin: 20px;
+            }   
+            .board-btn button {
+                margin: 20px;
+                text-align: center;
+                width: 80px;
+                font-size: medium;
+                border-radius: 10px;
+                font-weight: bold;
+                border: 5px solid darkorange;
+            }
