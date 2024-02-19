@@ -1,10 +1,14 @@
 # 1. Project Title: React Tik Tak Toe Game
-   This application updates "toDo" items on the realtime. Users could add or remove thier to do items as needed.
+   
+  
+  
+  # Description
+    This is a simple user interface (web app) that built on REACT framework. Game player is expected to randomly hit lucky board to win the prize. If the player is lucky, he/she would win instantly. The build/development of this app is on progress. Current status is more of skeleton, which needs improvement in many aspects.
    ![Landing page](./tik_tak_toe.png " alternate landing page")
      1.React Tik Tak Toe Game
-         tik-tak-toe-js.js
-         tik-tak-toe-index.html
-         tik-tak-toe-css.css
+         tik_tak_toe_js.js
+         tik_tak_toe_index.html
+         tik_tak_toe_css.css
 # 2. Motivation
     This is learning setup. . This app is on development phase and needs improvments
 # 3. Build Status
