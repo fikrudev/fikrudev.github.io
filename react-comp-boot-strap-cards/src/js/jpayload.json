@@ -1,0 +1,31 @@
+{
+    "books":[
+        {
+           "isbn":"9876543094",
+           "title":"Eloquent JavaScript, Second Edition",
+           "subtitle":"A modern Introduction to Programming",
+           "author":"Marijn Haverbeke",
+           "published":"2024-12-14T00:00:000Z",
+           "pages":472,
+           "description":"JavaScrip lie at the heart of almost every modern web application, from social apps to the newest brwoser-based games. Though simple for beginners to pick up and play with, Javascrip is a flexible,complex language that you can use to build full-scal"
+         },
+         {
+           "isbn":"9876543095",
+           "title":"Eloquent JavaScript, Second Edition 2",
+           "subtitle":"A modern Introduction to Programming",
+           "author":"Marijn Haverbeke",
+           "published":"2024-12-14T00:00:000Z",
+           "pages":472,
+           "description":"JavaScrip lie at the heart of almost every modern web application, from social apps to the newest brwoser-based games.Though simple for beginners to pick up and play with, Javascrip is a flexible,complex language that you can use to build full-scal"
+         },
+          {
+           "isbn":"9876543096",
+           "title":"Eloquent JavaScript, Second Edition 3",
+           "subtitle":"A modern Introduction to Programming",
+           "author":"Marijn Haverbeke",
+           "published":"2024-12-14T00:00:000Z",
+           "pages":472,
+           "description":"JavaScrip lie at the heart of almost every modern web application, from social apps to the newest brwoser-based games.Though simple for beginners to pick up and play with, Javascrip is a flexible,complex language that you can use to build full-scale"
+         }
+   ]
+ };
