@@ -1,8 +1,7 @@
 # 1. Project Title: Creating Web Components Programmatically
-![Landing page](./react-bs-cards.png" alternate landing page")
+![Landing page](./react_bs_cards.png" alternate landing page")
 
 
-# Description
 This user facing interface which populates data from internal files to web page. It do that by using reat componets. The output of this UI is presented on screenhshot, which is added to the README file.     
      1.Fetch and Render app artifacts:
          createbook.js
